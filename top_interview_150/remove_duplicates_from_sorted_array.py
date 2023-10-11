@@ -12,6 +12,7 @@ class Solution:
             else:
                 print('not duplicate: ', nums[i], ' at index: ', i)
                 nums[(i-duplicate_count)] = nums[i]
+                print('new nums: ', nums)
 
         return len(nums) - duplicate_count, nums
 
@@ -22,5 +23,5 @@ class Solution:
 
 if __name__ == '__main__':
     sol = Solution()
-    print(sol.removeDuplicates([1,1,2]))
+    print(sol.removeDuplicates([1,1,1,2,2,3]))
         
